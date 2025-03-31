@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% if form.instance.pk %}Редактировать транзакцию{% else %}Новая транзакция{% endif %}</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>{% if form.instance.pk %}Редактировать транзакцию{% else %}Новая транзакция{% endif %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Сохранить</button>
+    </form>
+    <a href="{% url 'transaction_list' %}" class="btn">Назад к списку</a>
+</body>
+</html>
