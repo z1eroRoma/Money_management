@@ -20,8 +20,8 @@
 1. **Клонируйте репозиторий:**
 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/z1eroRoma/Money_management.git
+   cd money_management
 
 ## Создайте виртуальное окружение и активируйте его
 
